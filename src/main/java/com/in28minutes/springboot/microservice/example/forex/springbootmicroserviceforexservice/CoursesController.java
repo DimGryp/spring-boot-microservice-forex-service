@@ -1,0 +1,28 @@
+package com.in28minutes.springboot.microservice.example.forex.springbootmicroserviceforexservice;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import com.CoursesEntity;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api")
+public class CoursesController {
+
+@Autowired
+CoursesRepository CoursesRepository;
+
+    // Get All Notes
+    @GetMapping("/courses")
+    public List<CoursesEntity> getAllCourses() {
+        return CoursesRepository.findAll();
+    }
+
+}
+
+
+
