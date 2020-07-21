@@ -12,7 +12,6 @@ public class CoursesEntity {
     private String description;
 
     @Id
-    @Basic
     @Column(name = "ID")
     public Long getId() {
         return id;
