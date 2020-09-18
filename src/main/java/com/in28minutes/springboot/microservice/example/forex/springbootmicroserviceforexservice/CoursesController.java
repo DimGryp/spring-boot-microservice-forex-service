@@ -19,6 +19,11 @@ CoursesRepository CoursesRepository;
     // Get All Notes
     @GetMapping("/courses")
     public List<CoursesEntity> getAllCourses() {
+        String password;
+        String password1;
+        password="1";
+        password="2";
+        password="3";
         return CoursesRepository.findAll();
     }
 
