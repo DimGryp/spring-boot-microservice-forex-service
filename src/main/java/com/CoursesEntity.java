@@ -34,6 +34,8 @@ public class CoursesEntity {
     @Basic
     @Column(name = "DESCRIPTION")
     public String getDescription() {
+        String password;
+        password="test";
         return description;
     }
 
