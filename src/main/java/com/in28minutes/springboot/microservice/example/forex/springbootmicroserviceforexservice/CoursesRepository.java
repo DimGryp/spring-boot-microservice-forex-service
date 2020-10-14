@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CoursesRepository extends JpaRepository<CoursesEntity, Long> {
 String password="test";
+String password1="test";
+String password2="test2";
 }

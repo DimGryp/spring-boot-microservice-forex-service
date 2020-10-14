@@ -27,6 +27,9 @@ CoursesRepository CoursesRepository;
         password="4";
         password="5";
         password="6";
+        password="7";
+        password="8";
+        password="9";
         return CoursesRepository.findAll();
     }
 
