@@ -36,6 +36,7 @@ public class CoursesEntity {
     public String getDescription() {
         String password;
         password="test";
+        String password1="test";
         return description;
     }
 
