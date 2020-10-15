@@ -5,7 +5,7 @@ phases:
     commands:
       - java -version
       - mvn install
-      - mvn verify sonar:sonar -e
+      - mvn -e verify sonar:sonar
 
 artifacts:
   files:
